@@ -15,7 +15,7 @@
 
 // Define the PIN numbers
 // #define IMU_DEBUG
-
+#define LASER_PIN                 28
 #define SAFETY_PIN                40
 #define MARS_BUTTON               20
 #define MOTOR_PWM                 37

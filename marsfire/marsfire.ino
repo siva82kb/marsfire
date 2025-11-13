@@ -47,11 +47,13 @@ void setup() {
 
   // Last received heart beat time
   lastRxdHeartbeat = millis();
-
+  //Initialize the Laser pin 28
+  pinMode(LASER_PIN, OUTPUT);
   // Set the values of pins 40 and 41
   pinMode(SAFETY_PIN, OUTPUT);
-  // SAFETY_PIN is set to high when the robot is ready.
+  // SAFETY_PIN and LASER_PIN are set to high when the robot is ready.
   digitalWrite(SAFETY_PIN, LOW);
+  digitalWrite(LASER_PIN,HIGH);
   // Ready message.
   SerialUSB.print(fwVersion);
   SerialUSB.print(" | ");
